@@ -1,0 +1,29 @@
+.suscripcion{
+    height: calc(100vh - 20rem);
+    background: url("../img/home.jpg") center no-repeat;
+    position: relative;
+    top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.suscripcion__box{
+    padding: 5rem;
+    border-radius: 5px;
+    background-color: #000d;
+    box-shadow: 0 0 5px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.suscripcion__msg{
+    color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+.suscripcion__btn{
+    outline: 2px solid black;
+}

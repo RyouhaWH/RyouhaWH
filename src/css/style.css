@@ -1,0 +1,420 @@
+:root {
+  --buttoncolor: linear-gradient(to right bottom, #fff3, #fff1);
+  --main-color-400: #0a9396;
+  --main-color-500: #395d6e;
+  --bg: #333;
+  --medida-pantalla: calc(100vh - 65px);
+  --section-padding: min(4rem, 25%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+  transition: 0.2s ease-out;
+  border: none;
+  text-decoration: none;
+}
+* > img {
+  user-select: none;
+  pointer-events: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding: 7rem;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 5rem;
+}
+
+#menu-btn {
+  display: inline-block;
+}
+.btn {
+  margin-block: 2rem;
+  padding: 0.5rem 2rem;
+  background: var(--main-color-400);
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.5rem;
+  color: #fff;
+  display: inline-block;
+}
+.btn:hover {
+  background-color: var(--main-color-500);
+}
+.fa-times {
+  transform: rotate(180deg);
+}
+
+.heading {
+  font-size: clamp(3rem, 7vw + 1rem, 4rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
+  overflow-y: hidden;
+  margin-bottom: 5rem;
+}
+.heading span {
+  font-size: clamp(3rem, 7vw + 1rem, 4rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: var(--main-color-400);
+}
+
+p {
+  font-size: clamp(1.2rem, 5vw + 1rem, 1.6rem);
+  line-height: 1.2;
+  font-weight: 300;
+  color: #222;
+}
+
+.header {
+  height: 7rem;
+  background: #222;
+  width: 100vw;
+  display: flex;
+  padding: 0 7%;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 0 0.5rem #333;
+}
+.header .logo {
+  color: var(--main-color-400);
+  font-family: "Alice", Serif;
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw + 1rem, 3rem);
+}
+.header .logo .img-logo {
+  transform: translateY(10%);
+  width: 25px;
+  height: 20px;
+}
+.header .logo span {
+  font-family: "Amita", cursive;
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw + 1rem, 3rem);
+}
+.header #menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.header #menu-btn:hover {
+  color: var(--main-color-400);
+}
+.header .navbar {
+  height: calc(100vh - 60px);
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  width: 100vw;
+  background: #3339;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .navbar.active {
+  right: 0;
+}
+.header .navbar a {
+  margin: 3rem 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  display: block;
+  transform: translateY(-100%);
+}
+.header .navbar a:hover {
+  color: var(--main-color-400);
+}
+
+.home {
+  height: 100vh;
+  background: url("../img/home.jpg") fixed center no-repeat;
+  z-index: -1;
+}
+.home .box-container {
+  background: #0009;
+  backdrop-filter: blur(0.25rem);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .box-container .box {
+  width: 100vw;
+  position: relative;
+  top: 0;
+  padding-inline: var(--section-padding);
+}
+.home .box-container .box .sub-titulo {
+  font-family: "Raleway", sans-serif;
+  color: #e0e0e0;
+  text-align: left;
+}
+.home .box-container .box .titulo {
+  color: #fff;
+  text-align: left;
+  margin-block: 1.5rem;
+  line-height: 1.2;
+}
+
+.servicio {
+  padding-inline: max(2rem, 5%);
+  padding-top: 4rem;
+}
+.servicio .item-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.servicio .item-container .item p {
+  margin-block: 2rem;
+  text-align: center;
+  font-size: clamp(1.6rem, 3vw + 1rem, 2.4rem);
+}
+.servicio .item-container .img {
+  width: clamp(25rem, 50vw, 72rem);
+  object-fit: cover;
+}
+
+.productos {
+  margin-inline: 12rem;
+  margin-bottom: 3rem;
+}
+.productos .productos-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.productos .productos-item.left {
+  flex-wrap: wrap-reverse;
+  align-items: center;
+}
+.productos .productos-item .descripcion {
+  width: 55rem;
+  min-width: 30rem;
+}
+.productos .productos-item .descripcion h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.productos .productos-item .descripcion p {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.productos .productos-item img {
+  /*height: 40.5rem;*/
+  width: clamp(27rem, 35vw, 60rem);
+  /*min-height: 17rem;*/
+  margin: 2rem;
+}
+
+.oferta {
+  padding-inline: 4rem;
+  padding-bottom: 4rem;
+}
+.oferta .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.oferta .card-container .card {
+  height: clamp(20rem, 20vh + 1rem, 30rem);
+  width: clamp(30rem, 20vw + 1rem, 45rem);
+  /*background-color: #f5f1f7cc;*/
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  border-radius: 0.5rem;
+  border: 0.05rem solid #9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.oferta .card-container .card:hover {
+  box-shadow: 0px 0px 1.5rem #3335;
+}
+.oferta .card-container .card h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.oferta .card-container .card p {
+  font-size: clamp(1.2rem, 1.5vw + 1rem, 1.6rem);
+}
+.oferta .card-container .card span {
+  font-size: 6rem;
+  color: var(--main-color-400);
+  margin-bottom: 1rem;
+  /*margin: max(2rem, 5%);*/
+}
+
+.contacto {
+  background: url("../img/contact.jpg") fixed center no-repeat;
+  background-size: cover;
+}
+.contacto .heading {
+  color: #fff;
+  padding-top: 5rem;
+}
+.contacto .contact-box {
+  margin-inline: clamp(2rem, 8vw, 32rem);
+  padding-block: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contacto .contact-box .form-container {
+  padding: 1.5em 1rem;
+  background: #000c;
+  width: clamp(30rem, 70vw + 1rem, 45rem);
+  border-radius: 20px 0 20px 20px;
+  box-shadow: 0 0 5px #000;
+}
+
+.contacto .contact-box .form-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contacto .contact-box .form-container form input {
+  padding: 0.5rem 2rem;
+  border-bottom: 2px solid var(--main-color-400);
+  color: #fff;
+  font-size: 1.6rem;
+  background: #333333;
+}
+.contacto .contact-box .form-container form textarea {
+  padding: 0.5rem 2rem;
+  border-bottom: 2px solid var(--main-color-400);
+  font-size: 1.6rem;
+  max-height: 20rem;
+  color: #fff;
+  background: #333333;
+}
+.contacto .contact-box .form-container form button {
+  padding: 0.5rem 2rem;
+  background: var(--main-color-400);
+  font-size: clamp(1.6rem, 2vw + 1rem, 2.4rem);
+  color: #fff;
+  width: 20rem;
+}
+.contacto .contact-box .form-container form button:hover {
+  background-color: var(--main-color-500);
+}
+
+
+.footer {
+  padding: 2rem;
+  background-color: #111;
+  height: 20rem;
+  position: relative;
+  bottom: 0;
+}
+.footer h2 {
+  transform: translateY(100%);
+  color: #fff;
+  font-size: clamp(2.4rem, 8vw + 1rem, 4.8rem);
+  font-weight: 400;
+  font-family: "alice", serif;
+}
+.footer h2 span {
+  font-family: "alice", serif;
+}
+.footer p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+}
+.footer a {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 1.6rem;
+  text-decoration: #4fd3c4;
+  color: var(--main-color-400);
+}
+
+@media (min-width: 1025px) {
+  #menu-btn {
+    display: none;
+  }
+
+  p {
+    line-height: 1.2;
+    font-size: 1.6rem;
+  }
+  .header {
+    height: 7rem;
+  }
+  .header .logo {
+    font-size: 3.2rem;
+  }
+  .header .navbar {
+    background: transparent;
+    backdrop-filter: none;
+    flex-direction: row;
+    position: static;
+    height: auto;
+    width: auto;
+  }
+  .header .navbar a {
+    padding: 1rem;
+    font-size: 2.4rem;
+    transform: none;
+    font-weight: lighter;
+  }
+
+  .home .box-container {
+    width: 50vw;
+  }
+  .home .box-container .box {
+    transform: translateY(30%);
+  }
+  .home .box-container .box .titulo,
+  .sub-titulo {
+    text-align: left;
+  }
+
+  .servicio .item-container {
+    flex-wrap: nowrap;
+  }
+}
