@@ -1,7 +1,7 @@
 import FeatureCard from "../Components/FeatureCard";
 import React from "react";
 import { AiOutlineMobile, AiOutlineWhatsApp } from "react-icons/ai";
-import { BsSpeedometer2 } from "react-icons/Bs";
+import { BsSpeedometer2 } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const Features = () => {
