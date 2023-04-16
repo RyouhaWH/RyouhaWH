@@ -115,17 +115,19 @@ const Contacto = () => {
           <p className="overflow-hidden text-center text-gray-300 sm:text-xl">{texto.subtitle}</p>
         </div>
 
-        <div className="-mt-12 flex items-center justify-center max-w-lg mx-auto  rounded shadow px-12 py-16 gap-4 flex-col">
+        <div className="flex flex-col items-center justify-center max-w-lg gap-4 px-12 py-16 mx-auto -mt-12 rounded shadow">
           <a
             className=" px-8 py-4 rounded bg-[#25D366] hover:bg-[#29ac59] text-white flex gap-2 w-[250px] items-center justify-between"
-            href=""
+            href="https://wa.me/56951004035"
+            target="_blank"
           >
             <AiOutlineWhatsApp fontSize={30} color="#fff" />
             <p>Contactar What'sapp</p> 
           </a>
+          
           <a
             className=" px-8 py-4 rounded bg-cyan-600 hover:bg-cyan-700 text-white flex gap-2 w-[250px] items-center justify-start"
-            href=""
+            href="mailto:ryundesarrolladorweb@gmail.com"
           >
             <AiOutlineMail fontSize={30} color="#fff" />
             <p>Enviar Correo</p> 

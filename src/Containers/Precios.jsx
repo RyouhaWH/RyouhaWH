@@ -7,8 +7,8 @@ const Precios = () => {
         SitioWeb: {
             title: "Sitio Web",
             subtitle: "Compra tu Sitio Web hecho a tu medida",
-            price: null,
-            priceMode: null,
+            price: "$20.000",
+            priceMode: "mensual",
             specs: [
                 `Personalizada al 100%`,
                 "Diseñada y Programada desde 0",
@@ -16,11 +16,11 @@ const Precios = () => {
                 "Hosting y dominio gratis el primer año",
             ],
         },
-        PlanMensual: {
-            title: "Plan mensual de página web",
+        Landing: {
+            title: "Landing Page",
             subtitle:
-                "Contrata tu Landing page, Especial para aquellos que están recien comenzando en el mundo web.",
-            price: "$20.000",
+                "Contrata tu Landing page, Obten un sitio de llegada para tus clientes y muestrales quien eres, tus redes, y como contar contigo.",
+            price: "$15.000",
             priceMode: "mensual",
             specs: [
                 "Página web que puedes modificar tu mismo.",
@@ -29,10 +29,23 @@ const Precios = () => {
                 "Actualizaciones pequeñas: Sin límite",
             ],
         },
+        // PlanMensual: {
+        //     title: "Plan mensual de página web",
+        //     subtitle:
+        //         "Contrata tu Landing page, Especial para aquellos que están recien comenzando en el mundo web.",
+        //     price: "$20.000",
+        //     priceMode: "mensual",
+        //     specs: [
+        //         "Página web que puedes modificar tu mismo.",
+        //         "Incluye hosting, dominios, deploy y certificado SSL.",
+        //         "Cambios en estructura: 2 mensuales",
+        //         "Actualizaciones pequeñas: Sin límite",
+        //     ],
+        // },
         Ecommerce: {
             title: "E-commerce",
             subtitle: "Diseñado para negocios con venta online.",
-            price: null,
+            price: "Comming Soon!",
             specs: [
                 "Integración con pasarelas de pagos",
                 "Auto Administrable",
@@ -93,9 +106,7 @@ const Precios = () => {
                     className="flex flex-col items-center justify-center gap-4 lg:flex-row"
                 >
                     <PriceCard data={data.SitioWeb} />
-
-                    {/* <PriceCard data={data.PlanMensual} /> */}
-
+                    <PriceCard data={data.Landing} />
                     <PriceCard data={data.Ecommerce} />
                 </motion.div>
             </motion.div>

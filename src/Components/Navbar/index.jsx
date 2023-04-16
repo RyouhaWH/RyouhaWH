@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { GiHamburgerMenu } from "react-icons/Gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { MdRestaurantMenu } from "react-icons/md";
 import {RiCake3Line} from "react-icons/ri"
 
