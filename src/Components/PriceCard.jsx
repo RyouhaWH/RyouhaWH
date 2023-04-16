@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFillBookmarkCheckFill } from "react-icons/Bs";
+import { BsFillBookmarkCheckFill } from "react-icons/bs";
 
 const PriceCard = ({ data }) => {
 
