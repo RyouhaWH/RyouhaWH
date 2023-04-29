@@ -17,8 +17,7 @@ const Galeria = () => {
             transition: {
                 delay:.1,
                 duration: 0.55,
-                delayChildren: .5,
-                staggerChildren: 0.35,
+                staggerChildren: 0.15,
             },
         },
     };
