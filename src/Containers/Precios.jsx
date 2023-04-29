@@ -10,10 +10,10 @@ const Precios = () => {
             price: "$20.000",
             priceMode: "mensual",
             specs: [
-                `Personalizada al 100%`,
                 "Diseñada y Programada desde 0",
-                "Soporte: ",
-                "Hosting y dominio gratis el primer año",
+                "Alojamiento y Certificado ssl",
+                "Dominio .cl",
+                "Administración y mantención ",
             ],
         },
         Landing: {
@@ -45,12 +45,12 @@ const Precios = () => {
         Ecommerce: {
             title: "E-commerce",
             subtitle: "Diseñado para negocios con venta online.",
-            price: "Comming Soon!",
+            price: "¡Pronto!",
             specs: [
                 "Integración con pasarelas de pagos",
                 "Auto Administrable",
                 "Límite de productos: Sin límite",
-                "Soporte: 12 meses",
+                "Alojamiento, dominio y certificado ssl",
             ],
         },
     };
@@ -106,7 +106,7 @@ const Precios = () => {
                     className="flex flex-col items-center justify-center gap-4 lg:flex-row"
                 >
                     <PriceCard data={data.SitioWeb} />
-                    <PriceCard data={data.Landing} />
+                    {/* <PriceCard data={data.Landing} /> */}
                     <PriceCard data={data.Ecommerce} />
                 </motion.div>
             </motion.div>
