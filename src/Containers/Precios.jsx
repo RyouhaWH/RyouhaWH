@@ -7,7 +7,7 @@ const Precios = () => {
         SitioWeb: {
             title: "Sitio Web",
             subtitle: "Compra tu Sitio Web hecho a tu medida",
-            price: "$20.000",
+            price: "$25.000",
             priceMode: "mensual",
             specs: [
                 "Diseñada y Programada desde 0",
@@ -20,7 +20,7 @@ const Precios = () => {
             title: "Landing Page",
             subtitle:
                 "Contrata tu Landing page, Obten un sitio de llegada para tus clientes y muestrales quien eres, tus redes, y como contar contigo.",
-            price: "$15.000",
+            price: "$19.500",
             priceMode: "mensual",
             specs: [
                 "Página web que puedes modificar tu mismo.",
@@ -106,7 +106,7 @@ const Precios = () => {
                     className="flex flex-col items-center justify-center gap-4 lg:flex-row"
                 >
                     <PriceCard data={data.SitioWeb} />
-                    {/* <PriceCard data={data.Landing} /> */}
+                    <PriceCard data={data.Landing} />
                     <PriceCard data={data.Ecommerce} />
                 </motion.div>
             </motion.div>
