@@ -6,27 +6,30 @@ const Precios = () => {
     let data = {
         SitioWeb: {
             title: "Sitio Web",
-            subtitle: "Compra tu Sitio Web hecho a tu medida",
-            price: "$25.000",
-            priceMode: "mensual",
+            subtitle: "Compra un Sitio Web hecho a tu medida",
+            price: "$250.000",
+            priceMode: "pago único",
             specs: [
                 "Diseñada y Programada desde 0",
-                "Alojamiento y Certificado ssl",
-                "Dominio .cl",
-                "Administración y mantención ",
+                "Formulario de contacto",
+                "Vínculo a Whatsapp",
+                "Enlaces a Redes Sociales",
             ],
         },
         Landing: {
-            title: "Landing Page",
+            title: "Plan inicial",
             subtitle:
-                "Contrata tu Landing page, Obten un sitio de llegada para tus clientes y muestrales quien eres, tus redes, y como contar contigo.",
+                "Especial para quienes comienzan en el mundo web!.",
             price: "$19.500",
             priceMode: "mensual",
             specs: [
-                "Página web que puedes modificar tu mismo.",
-                "Incluye hosting, dominios, deploy y certificado SSL.",
-                "Cambios en estructura: 2 mensuales",
+                "Landing page",
+                "Dominio .cl",
+                "Hosting y certificado SSL.",
+                "Vínculo a wsp y redes sociales",
+                "Formulario de contacto",
                 "Actualizaciones pequeñas: Sin límite",
+                "Cambios estructurales: 2 mensuales",
             ],
         },
         // PlanMensual: {

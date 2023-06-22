@@ -50,7 +50,7 @@ const Home = () => {
     };
 
     return (
-        <section id="home" className=" place-content-center grid h-[70vh]">
+        <section id="inicio" className=" place-content-center grid h-[70vh]">
             <motion.div
                 variants={variante}
                 initial="hidden"
@@ -72,14 +72,14 @@ const Home = () => {
                     </motion.p>
                     <motion.div variants={child}>
                         <a
-                            href="#"
+                            href="#contacto"
                             className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 "
                         >
                             Contáctanos
                             <RiArrowRightLine className="ml-4" />
                         </a>
                         <a
-                            href="#"
+                            href="#servicios"
                             className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 "
                         >
                             Nuestros Planes
