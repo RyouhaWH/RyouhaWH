@@ -6,8 +6,8 @@ const Precios = () => {
     let data = {
         SitioWeb: {
             title: "Sitio Web",
-            subtitle: "Compra un Sitio Web hecho a tu medida",
-            price: "$250.000",
+            subtitle: "Compra un Sitio Web hecho a tu medida desde",
+            price: "Contáctame",
             priceMode: "pago único",
             specs: [
                 "Diseñada y Programada desde 0",
@@ -20,7 +20,7 @@ const Precios = () => {
             title: "Plan inicial",
             subtitle:
                 "Especial para quienes comienzan en el mundo web!.",
-            price: "$19.500",
+            price: "$20.000",
             priceMode: "mensual",
             specs: [
                 "Landing page",
