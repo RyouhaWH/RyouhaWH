@@ -24,7 +24,6 @@ const Precios = () => {
             priceMode: "mensual",
             specs: [
                 "Landing page",
-                "Dominio .cl",
                 "Hosting y certificado SSL.",
                 "Vínculo a wsp y redes sociales",
                 "Formulario de contacto",
